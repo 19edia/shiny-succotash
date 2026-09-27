@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="same-origin">
+<title>IFJ • Acesso da equipe</title>
+<link rel="stylesheet" href="/login.css">
+</head>
+<body>
+<header><div class="brand"><span class="mark">IFJ</span><span>ROKUHARA / Central IFJ</span></div><span class="tag">Acesso restrito à equipe</span></header>
+<main>
+<section aria-labelledby="welcome"><p class="eyebrow">UNIÃO · RESPEITO · LEALDADE</p><h1 id="welcome">Uma família.<br><span>Uma identidade.</span></h1><p class="intro">Duas divisões conectadas. Identidades, alianças e operações em um só lugar — a central da família Rokuhara.</p><div class="divisions"><span class="division">01 / Primeira divisão</span><span class="division">02 / Segunda divisão</span></div><div class="ranks" aria-label="Permissões previstas por patente"><div class="rank"><i>01</i><div><strong>Administrador</strong><p>Gerencia logins, IFJs e operações.</p></div></div><div class="rank"><i>02</i><div><strong>Moderador</strong><p>Gerencia seus próprios IFJs e aplica /warn.</p></div></div><div class="rank"><i>03</i><div><strong>Recrutador</strong><p>Cria, consulta, edita e exclui seus próprios IFJs.</p></div></div></div></section>
+<section aria-labelledby="login-title"><div class="card"><div class="portal-symbol" aria-hidden="true">R</div><p class="eyebrow">PORTAL DA EQUIPE</p><h2 id="login-title">Entre na sua conta</h2><p class="muted">Use o login fornecido por um administrador.</p><form id="login-form" action="/api/auth/login" method="post"><label for="username">Usuário</label><input id="username" name="username" autocomplete="username" placeholder="Seu usuário" required minlength="3" maxlength="64" autocapitalize="none" spellcheck="false"><label for="password">Senha</label><div class="password"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Sua senha" required maxlength="128"><button class="toggle" id="toggle" type="button" aria-controls="password" aria-pressed="false" aria-label="Mostrar senha">Mostrar</button></div><button class="submit" id="submit" type="submit">Entrar no painel →</button><div class="notice" id="feedback" role="status" aria-live="polite"></div></form><details class="help"><summary>Precisa de acesso?</summary><p>Peça a um administrador para criar seu usuário ou redefinir sua senha. Sua patente será definida por ele; não é escolhida no login.</p></details><p class="footnote">Membro da divisão? Sua verificação com IFJ será realizada no Discord.</p></div><p class="stage">Acesso exclusivo à equipe · Sua patente é definida pelo administrador.</p></section>
+</main><footer><span>IFJ / Gestão de membros</span><span>Administrador · Moderador · Recrutador</span></footer>
+<script src="/login.js" defer></script>
+
+</body>
+</html>

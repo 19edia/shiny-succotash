@@ -1,0 +1,119 @@
+# Cópia para Render Free. Use o tutorial principal para criação manual.
+services:
+  - type: web
+    name: ifj-central
+    runtime: node
+    plan: free
+    numInstances: 1
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 22
+      - key: APP_ORIGIN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: INITIAL_ADMIN_USERNAME
+        sync: false
+      - key: INITIAL_ADMIN_PASSWORD
+        sync: false
+      - key: BOT_ENABLED
+        value: "true"
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: DIV_1_NAME
+        value: Primeira divisão
+      - key: DIV_1_GUILD_ID
+        sync: false
+      - key: DIV_1_MEMBER_ROLE_ID
+        sync: false
+      - key: DIV_1_ADMIN_ROLE_ID
+        sync: false
+      - key: DIV_1_VERIFICATION_CHANNEL_ID
+        sync: false
+      - key: DIV_1_WANTED_CHANNEL_ID
+        sync: false
+      - key: DIV_1_TICKETS_CHANNEL_ID
+        sync: false
+      - key: DIV_1_REPORTS_CHANNEL_ID
+        sync: false
+      - key: DIV_1_TICKET_CATEGORY_ID
+        sync: false
+      - key: DIV_2_NAME
+        value: Segunda divisão
+      - key: DIV_2_GUILD_ID
+        sync: false
+      - key: DIV_2_MEMBER_ROLE_ID
+        sync: false
+      - key: DIV_2_ADMIN_ROLE_ID
+        sync: false
+      - key: DIV_2_VERIFICATION_CHANNEL_ID
+        sync: false
+      - key: DIV_2_WANTED_CHANNEL_ID
+        sync: false
+      - key: DIV_2_TICKETS_CHANNEL_ID
+        sync: false
+      - key: DIV_2_REPORTS_CHANNEL_ID
+        sync: false
+      - key: DIV_2_TICKET_CATEGORY_ID
+        sync: false
+      - key: DIV_1_LEADER_ROLE_ID
+        sync: false
+      - key: DIV_1_SUBLEADER_ROLE_ID
+        sync: false
+      - key: DIV_1_HIGH_MEMBER_ROLE_ID
+        sync: false
+      - key: DIV_1_MODERATOR_ROLE_ID
+        sync: false
+      - key: DIV_1_RECRUITER_ROLE_ID
+        sync: false
+      - key: DIV_1_ALLY_ROLE_ID
+        value: "1551389189352853586"
+      - key: DIV_1_VETERAN_ROLE_ID
+        sync: false
+      - key: DIV_1_ROOKIE_ROLE_ID
+        sync: false
+      - key: DIV_2_LEADER_ROLE_ID
+        sync: false
+      - key: DIV_2_SUBLEADER_ROLE_ID
+        sync: false
+      - key: DIV_2_HIGH_MEMBER_ROLE_ID
+        sync: false
+      - key: DIV_2_MODERATOR_ROLE_ID
+        sync: false
+      - key: DIV_2_RECRUITER_ROLE_ID
+        sync: false
+      - key: DIV_2_ALLY_ROLE_ID
+        value: "1551393545183821854"
+      - key: DIV_2_VETERAN_ROLE_ID
+        sync: false
+      - key: DIV_2_ROOKIE_ROLE_ID
+        sync: false
+      - key: IMMIGRATION_GUILD_ID
+        value: ""
+      - key: DIV_1_WELCOME_CHANNEL_ID
+        sync: false
+      - key: DIV_1_GUIDE_CHANNEL_ID
+        sync: false
+      - key: DIV_2_WELCOME_CHANNEL_ID
+        sync: false
+      - key: DIV_2_GUIDE_CHANNEL_ID
+        sync: false
+      - key: OLD_ALLY_ROLE_ID
+        value: "1550966668707106856"
+      - key: DIV_1_INVITE_URL
+        value: "https://discord.gg/YZG82Q3gZ"
+      - key: DIV_2_INVITE_URL
+        value: "https://discord.gg/M6EgDMbgG"
+      - key: DIV_1_ALLIANCE_CHANNEL_ID
+        value: "1551393214714482748"
+      - key: DIV_2_ALLIANCE_CHANNEL_ID
+        value: "1551393565471674441"
+      - key: HYDRA_INVITE_URL
+        value: "https://discord.gg/a9tUzVxdQ"
